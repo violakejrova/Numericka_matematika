@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[252]:
-
-
 import numpy as np
 
 N = int(input("počet intervalů:"))
