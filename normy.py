@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 
 A = np.array([[-4,3,0,0], [4,20,13,1], [0,0,2,1], [3,-6,7,3]])
@@ -55,3 +49,8 @@ def spekt_norm(A):
     return snorm
 print(f"sloupcová norma je {sloup_norm(A)}, řádková norma je {rad_norm(A)} a spektrální norma je {spekt_norm(A)}") 
 
+#čísla podmíněnosti
+A1 = np.linalg.inv(A)
+KR = rad_norm(A) * rad_norm(A1)
+KS = sloup_norm(A) * sloup_norm(A1)
+KF = spekt_norm(A) * spekt_norm(A1)
