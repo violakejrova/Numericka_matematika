@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[89]:
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -36,10 +30,6 @@ plt.plot(i, x, marker = "o")
 plt.xlabel("Iterace")
 plt.ylabel("Hodnota")
 plt.show()
-
-
-
-# In[ ]:
 
 
 
