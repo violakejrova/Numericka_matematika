@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[20]:
-
-
 import math
 
 def u(x):
@@ -19,5 +13,5 @@ for i in range (667):
     x1 = x0 - (u(x0) / du(x0))
     x0 = x1
 print(x1)
-print(u(x1)) #ověření, že je to kořem
+print(u(x1)) #ověření, že je to kořen
 
