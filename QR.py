@@ -7,7 +7,7 @@
 import numpy as np
 
 N = 4
-A = (2 * np.eye(N) - np.eye(N, k=-1) - np.eye(N, k=1)+[1,2,3,4])
+A = (2 * np.eye(N) - np.eye(N, k=-1) - np.eye(N, k=1))
 Q = np.zeros_like(A)     #nuloví matice
 R = np.diag(np.ones(N))  #diagonální matice - jednotková
 
@@ -27,8 +27,8 @@ def GS(A):
 
 Q, R = GS(A)
 
-for i in range (20):
-    A = R@Q
-    A = Q@R
+for i in range(666):
+    A = R @ Q 
+    
+print("Vlastní čísla):", np.diag(A))
 
-print("Vlastní čísla:", np.diag(A))
