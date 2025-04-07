@@ -1,5 +1,15 @@
 # Numerická matematika
 
+Téměř v každém kódu je použita matice:
+[2,-1,0,...0],
+[-1,2,-1,0..],
+[0,-1,2,-1.,,,]
+[...-1,2,-1,...]
+.....
+...
+..
+.
+
  ## Disktetizace funkce
  \...
  ## Interační metody
