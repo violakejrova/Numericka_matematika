@@ -31,8 +31,4 @@ for i in range (20):
     A = R@Q
     A = Q@R
 
-print("Matice A:\n", A)
-print("Matice Q:\n", Q)
-print("Matice R:\n", R)
-print("Q * R:\n", Q @ R)
-
+print("Vlastní čísla:", np.diag(A))
