@@ -16,16 +16,16 @@ b = np.ones(N)
 
 x = np.zeros(N)  # počáteční odhad
 
-for k in range(max_iter):
+for k in range(5):
     x_old = x.copy()
     for i in range(N):
         s1 = np.dot(A[i, :i], x[:i])       # již spočítané nové hodnoty
         s2 = np.dot(A[i, i+1:], x_old[i+1:])  # staré hodnoty
         x[i] = (b[i] - s1 - s2) / A[i, i]
-    if np.linalg.norm(x - x_old, ord=np.inf) < tol:
-        break
+    #if np.linalg.norm(x - x_old, ord=np.inf) < tol:
+        #break
 
-print("x =", x)
+    print(f"Iterace {k+1}: x = {x}")
 
 # graf
 i = np.arange(len(x))
